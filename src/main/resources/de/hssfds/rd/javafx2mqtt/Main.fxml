@@ -9,5 +9,5 @@
     <Button fx:id="startButton" onAction="#handleStart" text="Start OPC and Connect to MQTT Server" />
     <Button fx:id="terminateButton" onAction="#handleTerminate" text="Terminate all Servers" />
     <Button fx:id="publishButton" onAction="#handlePublish" text="Publish Msg on OPC-Server" />
-   <TextField fx:id="tf_password" />
+   <TextField fx:id="tf_password" promptText="Enter MQTT Server Password" />
 </VBox>
