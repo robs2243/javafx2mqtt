@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hssfds.rd.javafx2mqtt.MainController">
+<VBox alignment="CENTER" prefHeight="297.0" prefWidth="266.0" spacing="10" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hssfds.rd.javafx2mqtt.MainController">
     <TextField fx:id="inputField" promptText="Enter a decimal value" />
     <Label fx:id="messageLabel" text="OPC UA output will be displayed here." />
-    <Button fx:id="startButton" text="Start OPC and Connect to MQTT Server" onAction="#handleStart" />
-    <Button fx:id="terminateButton" text="Terminate all Servers" onAction="#handleTerminate" />
-    <Button fx:id="publishButton" text="Publish Msg on OPC-Server" onAction="#handlePublish" />
+    <Button fx:id="startButton" onAction="#handleStart" text="Start OPC and Connect to MQTT Server" />
+    <Button fx:id="terminateButton" onAction="#handleTerminate" text="Terminate all Servers" />
+    <Button fx:id="publishButton" onAction="#handlePublish" text="Publish Msg on OPC-Server" />
+   <TextField fx:id="tf_password" />
 </VBox>
